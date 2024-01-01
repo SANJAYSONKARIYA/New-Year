@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Happy New Year</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hey! Listen this is for you 💖</h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1>For My <span>Dearest one</span></h1>
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <!-- <p>      
+          Wishing you and yours some well-deserved downtime and a very happy new year to come. Cheers to health, happiness, and prosperity in 2024! Wishing you and yours .
+           <b><br>Happy New Year!</b><br> My dear friends, may the New Year be your runway to chase your dreams and soar to new heights. Remember, you have the support and encouragement of your friends every step of the way. 
+         <br> -->
+         <p>
+          प्रिय मित्र और परिवार, नया साल आपके जीवन में नए उत्साह और सफलता के साथ आए। यह साल आपको स्वास्थ्य, सुख, और समृद्धि से भर दे, और आपकी सभी इच्छाएं पूरी हों। आपकी मेहनत और संघर्ष से जीवन में नए मील के पत्थर सामने आएं, और आप हमेशा हंसते रहें। नए साल के साथ नए और अनमोल संबंध बनाएं और पुराने संबंधों को मजबूती से निभाएं। आपका हर क्षण खास हो, और आपका जीवन खुशियों से भरा रहे।<br><br>
+
+इस नए वर्ष में हम सभी एक नए आरंभ की तलाश में हैं। यह साल हमें नई सृष्टि, नई दृष्टिकोण, और नए सपनों का अनुभव करने का मौका दे। आप सभी के साथ हमारे जीवन को सजाने और समृद्धि से भरने के लिए हम आभारी हैं। नए साल में हम सभी मिलकर अपने लक्ष्यों की प्राप्ति के लिए काम करेंगे और साथ में मिलकर हर मुश्किल को पार करेंगे। आपके साथ होने पर हम भाग्यशाली महसूस करते हैं, और हम आपके साथ नए साल की शुभकामनाएं भेजते हैं। नया साल आपके लिए नए संभावनाओं और सफलता का सफर लेकर आए। <br><br>
+Regards<br>
+<b>Sanjay Sonkariya</b>  <br> <br>
+ I have a some secret gift just for you if you wanna enjoy 
+ <a href="new.html">Click Here</a>
+         </p>
+         <!-- <p> 
+          Regards<br>
+         <b>Sanjay Sonkariya</b>  <br> <br>
+          I have a some secret gift just for you if you wanna enjoy 
+          <a href="new.html">Click Here</a>
+        </p> -->
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
+</html>
